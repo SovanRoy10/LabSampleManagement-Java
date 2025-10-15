@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Left side: logo + heading */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 20px; /* space between image and text */
+}
+
+nav {
+    display : flex;
+    align-items: center;
+}
+
+/* Logo styling */
+header img {
+  width: 150px;
+  height: auto;
+  background-color : white;
+  padding : 7px;
+  border-radius: 10px;
+}
+
+header h2{
+    color : white;
+}
+
+nav button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav button:hover {
+  background-color: #2980b9;
+}
+
+/* Center Content */
+.center {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.center h2 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.menu button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  min-width: 200px;
+  transition: background-color 0.3s;
+}
+
+.menu button:hover {
+  background-color: #219a52;
+}
+
+/* Form Styles */
+.sample-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.sample-form input,
+.sample-form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.sample-form input:focus,
+.sample-form select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.sample-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.sample-form button:hover {
+  background-color: #2980b9;
+}
+
+/* Table Styles */
+.samples-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.samples-table th,
+.samples-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.samples-table th {
+  background-color: #34495e;
+  color: white;
+  font-weight: bold;
+}
+
+.samples-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.samples-table tr:hover {
+  background-color: #e8f4f8;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit-btn {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-btn:hover {
+  background-color: #e67e22;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.functionality{
+    display : flex;
+    justify-content : space-between;
+    background: white;
+    border-radius: 6px;
+     box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+/* Filter Styles */
+.form-filter {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  width : fit-content;
+
+}
+
+.form-filter label {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.form-filter select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-filter input {
+  border: 1px solid #808080;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 1rem;
+  color: #2c3e50;
+  padding : 10px;
+  border-radius : 10px;
+}
+
+.form-filter input::placeholder {
+  color: #7f8c8d;
+}
+
+.search-btn {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+}
+
+.search-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Auth Styles */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.form-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-card h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-card button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.form-card button:hover {
+  background-color: #2980b9;
+}
+
+.form-card p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.form-card a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.form-card a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: #e74c3c;
+  background-color: #fadbd8;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.success {
+  color: #27ae60;
+  background-color: #d5f4e6;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+/* Main content area */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.page-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.page-btn:hover {
+  background-color: #2980b9;
+}
+
+.page-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.refresh-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.refresh-btn:hover {
+  background-color: #219a52;
+}
+
+.menu-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+  background-color: #2980b9;
+}
+
+/* =========================
+   Table Forms (inside <td>)
+   Used in viewsample.jsp
+========================= */
+.table-form {
+  display: inline;          /*  make inline so it stays inside td */
+  background: transparent;  /*  remove background card */
+  box-shadow: none;         /*  no shadow */
+  padding: 0;               /*  reset padding */
+  margin: 0;                /*  reset margin */
+  border-radius: 0;         /*  no rounded box */
+}
+
+.form-button-edit {
+  width: auto;              /*  button auto sized */
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #f39c12;
+
+}
+.form-button-delete{
+  width: auto;              /*  button auto sized */
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #e74c3c;
+}
+
+/* =========================
+   Pagination
+   used in viewsample.jsp
+========================= */
+.pagination {
+  margin: 20px auto; /* Center pagination */
+  display: flex; /* Horizontal layout */
+  justify-content: center; /* Center items */
+  align-items: center; /* Vertical alignment */
+  gap: 12px; /* Spacing between links */
+}
+
+.pagination a{
+    padding: 6px 12px; /* Padding inside links */
+    border: none; /* Remove default border */
+    background: #007BFF; /* Blue background */
+    color: white; /* White text */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration : none;
+}
+
+.disabled {
+  padding: 6px 12px; /* Same padding as normal link */
+  background: #ccc; /* Gray background for disabled */
+  color: #666; /* Dark gray text */
+  cursor: default;
+  pointer-events: none; /* Makes disabled unclickable */
+  border-radius: 4px;
+}

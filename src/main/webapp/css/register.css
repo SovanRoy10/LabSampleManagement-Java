@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #B3E5FC;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    margin: 0;
+
+}
+
+
+/* For the main form card */
+.form-card {
+
+    background: #fff;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+
+    width: 350px;
+
+    text-align: center;
+
+}
+
+
+
+.form-card h2 {
+
+    margin-bottom: 20px;
+
+    color: #333;
+
+}
+
+
+
+.form-card input[type="text"],
+
+.form-card input[type="password"],
+
+.form-card input[type="email"] {
+
+    width: 90%;
+
+    padding: 10px;
+
+    margin: 10px 0;
+
+    border-radius: 6px;
+
+    border: 1px solid #ccc;
+
+    font-size: 14px;
+
+}
+
+
+
+.form-card input[type="submit"] {
+
+    width: 100%;
+
+    padding: 10px;
+
+    background: #007BFF;
+
+    color: #fff;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    margin-top: 10px;
+
+    transition: background 0.3s;
+
+}
+
+
+
+.form-card input[type="submit"]:hover {
+
+    background: #0056b3;
+
+}
+
+
+
+.form-card p {
+
+    margin-top: 15px;
+
+    font-size: 14px;
+
+}
+
+
+
+.form-card a {
+
+    color: #007BFF;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+
+.form-card a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* When User give existing Email Id during registration */
+.error{
+	color : red;
+}
